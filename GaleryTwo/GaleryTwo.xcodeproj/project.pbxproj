@@ -13,9 +13,12 @@
 		8AFF810E2AD8668C00EA4C7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AFF810C2AD8668C00EA4C7A /* Main.storyboard */; };
 		8AFF81102AD8668D00EA4C7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AFF810F2AD8668D00EA4C7A /* Assets.xcassets */; };
 		8AFF81132AD8668D00EA4C7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AFF81112AD8668D00EA4C7A /* LaunchScreen.storyboard */; };
+		C12B8C145A96A5F0C427514E /* Pods_GaleryTwo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 579912F1DEA709AA54AF982B /* Pods_GaleryTwo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		579912F1DEA709AA54AF982B /* Pods_GaleryTwo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GaleryTwo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		77B45D9453ADAEEFA684536B /* Pods-GaleryTwo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GaleryTwo.release.xcconfig"; path = "Target Support Files/Pods-GaleryTwo/Pods-GaleryTwo.release.xcconfig"; sourceTree = "<group>"; };
 		8AFF81032AD8668C00EA4C7A /* GaleryTwo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GaleryTwo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AFF81062AD8668C00EA4C7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8AFF81082AD8668C00EA4C7A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		8AFF810F2AD8668D00EA4C7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8AFF81122AD8668D00EA4C7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8AFF81142AD8668D00EA4C7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A14A0129960BCEAC5BE6D4BD /* Pods-GaleryTwo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GaleryTwo.debug.xcconfig"; path = "Target Support Files/Pods-GaleryTwo/Pods-GaleryTwo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C12B8C145A96A5F0C427514E /* Pods_GaleryTwo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		525508C80F40A0EDF04CD054 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A14A0129960BCEAC5BE6D4BD /* Pods-GaleryTwo.debug.xcconfig */,
+				77B45D9453ADAEEFA684536B /* Pods-GaleryTwo.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6EE382C0AC59F60C9975E3BE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				579912F1DEA709AA54AF982B /* Pods_GaleryTwo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8AFF80FA2AD8668C00EA4C7A = {
 			isa = PBXGroup;
 			children = (
 				8AFF81052AD8668C00EA4C7A /* GaleryTwo */,
 				8AFF81042AD8668C00EA4C7A /* Products */,
+				525508C80F40A0EDF04CD054 /* Pods */,
+				6EE382C0AC59F60C9975E3BE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8AFF81172AD8668D00EA4C7A /* Build configuration list for PBXNativeTarget "GaleryTwo" */;
 			buildPhases = (
+				6F1CE42DA023E14AA1868C6A /* [CP] Check Pods Manifest.lock */,
 				8AFF80FF2AD8668C00EA4C7A /* Sources */,
 				8AFF81002AD8668C00EA4C7A /* Frameworks */,
 				8AFF81012AD8668C00EA4C7A /* Resources */,
+				F5AC966B7C4782E250B70C0E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6F1CE42DA023E14AA1868C6A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GaleryTwo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5AC966B7C4782E250B70C0E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GaleryTwo/Pods-GaleryTwo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GaleryTwo/Pods-GaleryTwo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GaleryTwo/Pods-GaleryTwo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8AFF80FF2AD8668C00EA4C7A /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		8AFF81182AD8668D00EA4C7A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A14A0129960BCEAC5BE6D4BD /* Pods-GaleryTwo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +380,7 @@
 		};
 		8AFF81192AD8668D00EA4C7A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77B45D9453ADAEEFA684536B /* Pods-GaleryTwo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
