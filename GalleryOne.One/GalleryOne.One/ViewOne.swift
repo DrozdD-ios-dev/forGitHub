@@ -94,7 +94,7 @@ extension ViewOne: UICollectionViewDataSource, UICollectionViewDelegate, UIColle
         return CGSize(width: widthCell - spacing, height: heightCell - (offset * 2))
 
     }
-    
+    //-
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print(photoData?.data[indexPath.row].image.name)
     }
